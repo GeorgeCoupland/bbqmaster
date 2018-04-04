@@ -1,0 +1,109 @@
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* ---- typography ---- */
+
+body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+p {
+    margin: 0;
+}
+
+
+/* ---- layout ---- */
+
+.btn {
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    position: relative;
+    display: inline-block;
+    background-color: #55acee;
+}
+
+.btn:hover {
+    background-color: #6FC6FF;
+}
+
+#site-header {
+    padding: 30px 0;
+    color: white;
+    background: #111;
+}
+
+#site-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+}
+
+#site-main {
+    margin-bottom: 60px;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 728px;
+        margin: 0 auto;
+    }
+}
+
+
+/* ---- game-screen ----*/
+
+#main-content {
+    height: 100%;
+}
+
+.game-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grill {
+    background-color: grey;
+    flex: 0 0 70%;
+}
+
+
+/* ---- components ---- */
