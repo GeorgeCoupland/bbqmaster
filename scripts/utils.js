@@ -8,6 +8,12 @@ utils.createHtml = function(html) {
     return div.children[0];
 }
 
+utils.getImage = function() {
+    var string = ["./chicken-leg-svgrepo-com.png", "./beef-steak-svgrepo-com.png", "./sausageforgame.png"];
+    return string[Math.floor(Math.random() * 3)];
+    //return './chicken-leg-svgrepo-com.png'
+}
+
 /*function createHtml(html) {
   var div = document.createElement("div");
   div.innerHTML = html;

@@ -1,109 +1,171 @@
-/* ---- reset ---- */
-
-html {
-    box-sizing: border-box;
-    height: 100%;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-
-/* ---- typography ---- */
-
-body {
-    color: #111;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 147%;
-}
-
-h1 {}
-
-h2 {}
-
-h3 {}
-
-p {
-    margin: 0;
-}
-
-
-/* ---- layout ---- */
-
-.btn {
-    border-radius: 8px;
-    padding: 5px 10px;
-    font-size: 22px;
-    text-decoration: none;
-    margin: 20px;
-    position: relative;
-    display: inline-block;
-    background-color: #55acee;
-}
-
-.btn:hover {
-    background-color: #6FC6FF;
-}
-
-#site-header {
-    padding: 30px 0;
-    color: white;
-    background: #111;
-}
-
-#site-footer {
-    color: white;
-    padding: 60px 0;
-    background: #111;
-}
-
-#site-main {
-    margin-bottom: 60px;
-}
-
-.container {
-    margin: 0 20px;
-}
-
-.section {
-    margin-bottom: 20px;
-    padding-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 728px;
-        margin: 0 auto;
+    /* ---- reset ---- */
+    
+    html {
+        box-sizing: border-box;
+        height: 100%;
     }
-}
-
-
-/* ---- game-screen ----*/
-
-#main-content {
-    height: 100%;
-}
-
-.game-screen {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.grill {
-    background-color: grey;
-    flex: 0 0 70%;
-}
-
-
-/* ---- components ---- */
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    /* ---- typography ---- */
+    
+    body {
+        color: #111;
+        font-family: "westernfont", Arial, sans-serif;
+        font-size: 30px;
+        line-height: 147%;
+    }
+    
+    h1 {}
+    
+    h2 {}
+    
+    h3 {}
+    
+    p {
+        margin: 0;
+    }
+    /* ---- layout ---- */
+    
+    @font-face {
+        font-family: 'westernfont';
+        src: url('./fontforproject.ttf');
+    }
+    
+    .splashscreen {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .action {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn {
+        border-radius: 8px;
+        padding: 10px 10px;
+        font-size: 22px;
+        text-decoration: none;
+        margin: 10px;
+        position: relative;
+        display: inline-block;
+        background-color: #55acee;
+    }
+    
+    .btn:hover {
+        background-color: #6FC6FF;
+    }
+    
+    #site-header {
+        padding: 30px 0;
+        color: white;
+        background: #111;
+    }
+    
+    #site-footer {
+        color: white;
+        padding: 60px 0;
+        background: #111;
+    }
+    
+    #site-main {
+        margin-bottom: 60px;
+    }
+    
+    .container {
+        margin: 0 20px;
+    }
+    
+    .section {
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 728px;
+            margin: 0 auto;
+        }
+    }
+    /* ---- game-screen ----*/
+    
+    #main-content {
+        height: 100%;
+    }
+    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .game-screen {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .grill {
+        background-image: url('./bbqphoto.jpg');
+        display: flex;
+        height: 100%;
+        width: 60%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .uncooked-meat {
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    
+    .uncooked-meat path {
+        fill: pink;
+    }
+    
+    .cooking-area {
+        display: flex;
+        height: 100%;
+    }
+    
+    .border {
+        border: 0px solid black;
+    }
+    
+    .raw-meat,
+    .cooked-meat {
+        flex: 1 0 10%;
+    }
+    
+    .gridsquare {
+        width: 50%;
+    }
+    
+    .grill img {
+        width: 100%;
+    }
+    
+    .row>div {
+        height: 50%;
+    }
+    
+    .row {
+        width: 25%;
+        height: 40%;
+    }
+    /* ---- components ---- */
